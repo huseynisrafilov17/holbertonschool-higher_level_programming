@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-str = ""
+alphabet = ""
 
 for i in range(97, 123):
-    str = str + chr(i)
+    alphabet = alphabet + chr(i)
 
-print(str, end="")
+print(alphabet, end="")
