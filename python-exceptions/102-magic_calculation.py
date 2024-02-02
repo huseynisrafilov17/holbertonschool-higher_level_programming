@@ -5,11 +5,7 @@ def magic_calculation(a, b):
             if i > a:
                 raise Exception("Too far")
             result += (a ** b) / i
-            if i == a:
-                result += b
         except Exception:
+            result = a + b
             break
-    if result.is_integer():
-        return int(result)
-    else:
-        return result
+    return result
