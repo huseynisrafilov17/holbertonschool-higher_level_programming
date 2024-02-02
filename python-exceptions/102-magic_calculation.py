@@ -10,4 +10,4 @@ def magic_calculation(a, b):
             break
         else:
             result += b
-    return result
+    return float(result)
