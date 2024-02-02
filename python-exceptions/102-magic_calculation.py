@@ -9,7 +9,7 @@ def magic_calculation(a, b):
                 result += b
         except Exception:
             break
-    if result.is_integer()
+    if result.is_integer():
         return int(result)
     else:
         return result
