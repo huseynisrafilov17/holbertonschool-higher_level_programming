@@ -22,5 +22,3 @@ def text_indentation(text):
         else:
             print(text[i], end="")
             flag = False
-
-text_indentation("Holberton. School? How are you: John")
