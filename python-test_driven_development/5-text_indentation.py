@@ -9,12 +9,18 @@ def text_indentation(text):
     Args:
         text: text
     '''
+    flag = False
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    text = text.replace(". ", ".\n\n")
-    text = text.replace(".", ".\n\n")
-    text = text.replace(": ", ":\n\n")
-    text = text.replace(":", ":\n\n")
-    text = text.replace("? ", "?\n\n")
-    text = text.replace("?", "?\n\n")
-    print("{}".format(text), end="")
+    for i in range(len(text)):
+        if flag and text[i].isspace():
+            continue
+        elif text[i] in [".", "?", ":"]:
+            print(text[i], end="")
+            print("\n")
+            flag = True
+        else:
+            print(text[i], end="")
+            flag = False
+
+text_indentation("Holberton. School? How are you: John")
