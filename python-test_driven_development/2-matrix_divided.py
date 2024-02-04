@@ -17,6 +17,7 @@ def matrix_divided(matrix, div):
     error_msg3 = "div must be a number"
     error_msg4 = "division by zero"
     new_list = []
+    count = 0
     if not (isinstance(div, int) or isinstance(div, float)):
         raise TypeError(error_msg3)
     if div == 0:
@@ -25,8 +26,10 @@ def matrix_divided(matrix, div):
         len1 = len(matrix[0])
         if len1 != len(j):
             raise TypeError(error_msg2)
+        new_list.append([])
         for i in j:
             if not (isinstance(i, int) or isinstance(i, float)):
                 raise TypeError(error_msg)
-            new_list.append(round(i / div, 2))
+            new_list[count].append(round(i / div, 2))
+        count += 1
     return new_list
