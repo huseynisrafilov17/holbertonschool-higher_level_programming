@@ -7,7 +7,7 @@ max_integer = __import__('6-max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
     def test_regular_list(self):
-        self.assertEqual(max_integer([51, 25, 76, 31]), 76)
+        self.assertEqual(max_integer([516, 25, 76, 31]), 516)
         self.assertEqual(max_integer([4, 100, 44, 5]), 100)
 
     def test_empty_list(self):
