@@ -4,6 +4,8 @@ A function to add two integers
 
 a and b must be integer or floats.
 '''
+
+
 def add_integer(a, b=98):
     '''add_integer adds two integers
     Args:

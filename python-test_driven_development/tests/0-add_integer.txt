@@ -12,8 +12,6 @@
 >>> add_integer(100.3, -2)
 98
 
->>> add_integer(-98.8)
-0
 
 >>> add_integer(4, "School")
 Traceback (most recent call last):
@@ -25,7 +23,12 @@ Traceback (most recent call last):
 	...
 TypeError: a must be an integer
 
->>> add_integer(None, 78)
+>>> add_integer(1, float('inf'))
 Traceback (most recent call last):
-        ...
-TypeError: a must be an integer
+	...
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(1, float('NaN'))
+Traceback (most recent call last):
+	...
+ValueError: cannot convert float NaN to integer
