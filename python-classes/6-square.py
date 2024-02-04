@@ -64,9 +64,10 @@ class Square:
         '''
         my_print prints a square
         '''
-        for b in range(self.position[1]):
-            print()
-        for i in range(self.size):
-            print(" " * self.position[0] + "#" * self.size)
         if self.size == 0:
             print()
+        else:
+            for b in range(self.position[1]):
+                print()
+            for i in range(self.size):
+                print(" " * self.position[0] + "#" * self.size)
