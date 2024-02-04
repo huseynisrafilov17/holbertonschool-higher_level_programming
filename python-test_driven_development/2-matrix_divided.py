@@ -30,6 +30,3 @@ def matrix_divided(matrix, div):
                 raise TypeError(error_msg)
             new_list.append(round(i / div, 2))
     return new_list
-
-matrix = "hey!"
-print(matrix_divided(matrix, 3))
