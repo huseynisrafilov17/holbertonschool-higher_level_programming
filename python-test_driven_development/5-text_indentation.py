@@ -2,6 +2,8 @@
 '''
 This module includes a function that replace '.', ':', '?' with 2 new lines
 '''
+
+
 def text_indentation(text):
     '''
     text_indentation replaces '.', ':', '?' with 2 new lines
