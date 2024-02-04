@@ -17,6 +17,30 @@ class Square:
         '''Calculates the area of square'''
         return self.__size ** 2
 
+    def __eq__(self, other):
+        '''Equal comparison'''
+        return self.area() == other.area()
+
+    def __ne__(self, other):
+        '''Not equal comparison'''
+        return self.area() != other.area()
+
+    def __lt__(self, other):
+        '''Less than comparison'''
+        return self.area() < other.area()
+
+    def __le__(self, other):
+        '''Less than or equal comparison'''
+        return self.area() <= other.area()
+
+    def __gt__(self, other):
+        '''Greater than comparison'''
+        return self.area() > other.area()
+
+    def __ge__(self, other):
+        '''Greater than or equal comparison'''
+        return self.area() >= other.area()
+
     @property
     def size(self):
         '''size getter'''
