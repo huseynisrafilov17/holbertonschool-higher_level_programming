@@ -46,8 +46,22 @@ class Rectangle:
 
     def __str__(self):
         string = ""
-        for i in range(self.height):
-            string = string + "#" * self.width
-            if i != self.height - 1:
-                string = string + "\n"
+        if self.width != 0:
+            for i in range(self.height):
+                string = string + "#" * self.width
+                if i != self.height - 1:
+                    string = string + "\n"
         return string
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+print(str(my_rectangle))
+print(repr(my_rectangle))
+
+print("--")
+
+my_rectangle.width = 10
+my_rectangle.height = 3
+print(my_rectangle)
+print(repr(my_rectangle))
