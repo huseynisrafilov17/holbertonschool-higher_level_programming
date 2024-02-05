@@ -7,6 +7,9 @@ This module has a class named Rectangle
 class Rectangle:
     '''
     This class defines a rectangle object
+
+    Args:
+        number_of_instances: number of instances
     '''
 
     number_of_instances = 0
