@@ -4,7 +4,7 @@ MyModule
 '''
 
 
-class BaseGeometry:
+class BaseGeometry():
     '''
     My BaseGeometry class
     '''
