@@ -2,6 +2,8 @@
 '''
 MyModule
 '''
+
+
 class MyList(list):
     '''
     List inherited
