@@ -28,3 +28,7 @@
 []
 >>> my_list.print_sorted()
 []
+
+>>> my_list = MyList()
+>>> type(my_list)
+<class '1-my_list.MyList'>
