@@ -22,7 +22,7 @@ if __name__ == "__main__":
                     if status_codes[i] > 0:
                         print("{}: {}".format(i, status_codes[i]))
                 count = 0
-        except KeyboardInterrupt:
+        except (KeyboardInterrupt, EOFError):
             print("File size: {}".format(file_size))
             for i in status_codes.keys():
                 if status_codes[i] > 0:
