@@ -9,6 +9,7 @@ class MyInt(int):
     My int
     '''
     def __eq__(self, other):
-        return self^other != 0
+        return self ^ other != 0
+
     def __ne__(self, other):
-        return self^other == 0
+        return self ^ other == 0
