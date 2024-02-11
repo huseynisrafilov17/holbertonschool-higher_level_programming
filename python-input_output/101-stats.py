@@ -13,8 +13,8 @@ if __name__ == "__main__":
         try:
             string = input()
             x = string.split()
-            file_size += int(x[8])
-            status_codes[x[7]] += 1
+            file_size += int(x[-1])
+            status_codes[x[-2]] += 1
             count += 1
             if count == 10:
                 print("File size: {}".format(file_size))
