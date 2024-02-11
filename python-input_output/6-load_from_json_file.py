@@ -7,7 +7,7 @@ import json
 
 def load_from_json_file(filename):
     '''
-    save_to_json_file creates an Object from a JSON file
+    load_from_json_file creates an Object from a JSON file
     Args:
         filename: file name
     '''
