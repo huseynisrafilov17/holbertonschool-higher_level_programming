@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''
+This is a script that adds item to a json file
+'''
 import json
 import sys
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
