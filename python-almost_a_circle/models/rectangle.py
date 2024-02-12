@@ -75,5 +75,8 @@ class Rectangle(Base):
         '''
         display prints rectangle on output
         '''
-        for i in range(self.height):
-            print("#" * self.width)
+        if self.height == 0 or self.width == 0:
+            print()
+        else:
+            for i in range(self.height):
+                print("#" * self.width)
