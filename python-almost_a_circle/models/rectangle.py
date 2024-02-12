@@ -88,3 +88,12 @@ class Rectangle(Base):
         return "[{}] ({}) {}/{} - {}/{}".format(
             c_n, self.id, self.x, self.y, self.width, self.height
         )
+
+    def update(self, *args, **kwargs):
+        arglist = [id, width, height, x, y]
+        if args and len(args) != 0:    
+            for i in len(args):
+                setattr(self, arglist[i], args[i])
+        else:
+            for k, v in kwargs:
+                setattr(self, k, v)
