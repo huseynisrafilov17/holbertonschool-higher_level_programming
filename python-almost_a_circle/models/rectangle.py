@@ -90,6 +90,9 @@ class Rectangle(Base):
         )
 
     def update(self, *args, **kwargs):
+        '''
+        update updates attributes of instance
+        '''
         arglist = [id, width, height, x, y]
         if args and len(args) != 0:    
             for i in len(args):
