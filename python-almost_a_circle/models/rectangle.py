@@ -94,7 +94,7 @@ class Rectangle(Base):
         update updates attributes of instance
         '''
         arglist = ["id", "width", "height", "x", "y"]
-        if args and len(args) != 0:    
+        if args and len(args) != 0:
             for i in range(len(args)):
                 setattr(self, arglist[i], args[i])
         else:
