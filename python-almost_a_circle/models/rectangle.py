@@ -2,7 +2,7 @@
 '''
 My module
 '''
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -98,5 +98,5 @@ class Rectangle(Base):
             for i in range(len(args)):
                 setattr(self, arglist[i], args[i])
         else:
-            for k, v in kwargs:
-                setattr(self, k, v)
+            for k in kwargs.keys():
+                setattr(self, k, kwargs[k])
