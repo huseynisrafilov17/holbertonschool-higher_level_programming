@@ -7,8 +7,6 @@ My module
 class Base:
     '''
     Base Class
-    Args:
-        __nb_objects: variable
     '''
     __nb_objects = 0
 
