@@ -105,4 +105,11 @@ class Rectangle(Base):
         '''
         to_dictionary returns dictionary of the object
         '''
-        return self.__dict__
+        new_dict = {
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y
+        }
+        return new_dict
