@@ -44,7 +44,7 @@ class Square(Rectangle):
         '''
         new_dict = {
                 "id": self.id,
-                "size": self.size
+                "size": self.size,
                 "x": self.x,
                 "y": self.y
         }
