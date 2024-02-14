@@ -102,4 +102,7 @@ class Rectangle(Base):
                 setattr(self, k, kwargs[k])
 
     def to_dictionary(self):
+        '''
+        to_dictionary returns dictionary of the object
+        '''
         return self.__dict__
