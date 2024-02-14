@@ -100,3 +100,6 @@ class Rectangle(Base):
         else:
             for k in kwargs.keys():
                 setattr(self, k, kwargs[k])
+
+    def to_dictionary(self):
+        return self.__dict__
