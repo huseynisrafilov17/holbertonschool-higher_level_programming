@@ -2,6 +2,7 @@
 '''
 My module
 '''
+import json
 
 
 class Base:
