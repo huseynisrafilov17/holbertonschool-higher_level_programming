@@ -36,7 +36,7 @@ class Base:
         c_n = cls.__name__
         if list_objs is None:
             with open("{}.json".format(c_n), "w", encoding="utf-8") as f:
-                f.write("\"[]\"")
+                f.write("[]")
         else:
             li = []
             for i in list_objs:
