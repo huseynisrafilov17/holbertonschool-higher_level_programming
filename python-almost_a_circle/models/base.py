@@ -49,4 +49,4 @@ class Base:
         if json_string is None:
             return []
         else:
-            return json.loads(list_dictionaries)
+            return json.loads(json_string)
