@@ -3,6 +3,7 @@
 My module
 '''
 import json
+import turtle
 
 
 class Base:
@@ -73,3 +74,42 @@ class Base:
         for i in li:
             li_obj.append(cls.create(**i))
         return li_obj
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        @staticmethod
+    def draw(list_rectangles, list_squares):
+        t = turtle.Turtle()
+        screen = turtle.Screen()
+        screen.title("Drawing")
+
+        def rectangle(x, y, width, height):
+            t.penup()
+            t.goto(x, y)
+            t.pendown()
+            for i in range(2):
+                t.forward(width)
+                t.right(90)
+                t.forward(height)
+                t.right(90)
+
+        def square(x, y, side_length):
+            t.penup()
+            t.goto(x, y)
+            t.pendown()
+            for i in range(4):
+                t.forward(side_length)
+                t.right(90)
+
+        for rectangle in list_rectangles:
+            rectangle(
+                rectangle.x,
+                rectangle.y,
+                rectangle.width,
+                rectangle.height,
+            )
+
+        for square in list_squares:
+            square(square.x, square.y, square.size)
+
+        screen.exitonclick()
