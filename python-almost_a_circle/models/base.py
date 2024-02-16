@@ -77,8 +77,6 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        @staticmethod
-    def draw(list_rectangles, list_squares):
         t = turtle.Turtle()
         screen = turtle.Screen()
         screen.title("Drawing")
