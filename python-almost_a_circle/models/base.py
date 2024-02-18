@@ -110,4 +110,4 @@ class Base:
         for square in list_squares:
             square(square.x, square.y, square.size)
 
-        screen.exitonclick()
+        # screen.exitonclick()
