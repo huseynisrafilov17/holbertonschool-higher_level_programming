@@ -16,5 +16,6 @@ if __name__ == "__main__":
 
     for state in session.query(State).filter(State.name.contains("a")):
         session.delete(state)
+    session.commit()
 
     session.close()
